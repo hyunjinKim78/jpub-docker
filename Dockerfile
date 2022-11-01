@@ -1,8 +1,7 @@
 from ubuntu
 maintainer "jini <jini@secui.com>"
 label "purpose"="container web application practice."
-run apt-get update \
- apt-get -y install apache2
+run apt-get update && apt-get -y install apache2
 
 run echo 'Docker Container Application.' > /var/www/html/index.html
 
